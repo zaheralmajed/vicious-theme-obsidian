@@ -39,6 +39,7 @@ Elevate your note taking experience with Vicious, a sleek and immersive theme fo
 <p align="center">
 <img  src="https://raw.githubusercontent.com/zaheralmajed/vicious-theme-obsidian/main/assets/dark.png" alt="Vicious Screenshot">
 </p>
+
 ### Light Mode
 
 <p align="center">
