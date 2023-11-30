@@ -190,19 +190,19 @@ To install the Vicious theme for your desired application or tool, follow these 
 -   Go to the `Settings`
 -   Then navigate to `Appearances`
 -   Under the Themes section, click on the `Manage` button across from Themes
--   Search for `Vicious Theme`
+-   Search for `Vicious`
 -   Click on `Install and use`
 
 ### Manual
 
 -   Download this repo
 -   Then navigate `/.obsidian/themes`
--   Create folder & call it `Vicious Theme`.
+-   Create folder & call it `Vicious`.
 -   Copy the `theme.css` and `manifest.json` inside the folder.
 -   Open Obsidian and go to the `Settings`
 -   Then navigate to `Appearances`
 -   Under the Themes section, click on the dropdown menu next to Theme heading
--   Select `Vicious Theme`
+-   Select `Vicious`
 
 # Contribute to Vicious theme
 
