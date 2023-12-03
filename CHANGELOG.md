@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2023-12-03
+
+### Changed
+
+-   Display inline titles inside popovers
+-   Text of pills on data view more visable
+-   Link color more obvious
+-   Reduce interactive hover more
+
 ## [1.0.1] - 2023-12-02
 
 ### Changed

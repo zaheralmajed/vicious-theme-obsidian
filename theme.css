@@ -111,6 +111,8 @@
 	--vicious-indent-3: var(--C003);
 	--vicious-indent-2: var(--C002);
 	--vicious-indent-1: var(--C001);
+	--link-color: var(--C001);
+	--link-unresolved-color: var(--C008);
 	--indentation-guide-width: 0px;
 	--vicious-indent-bg-size: calc(
 			var(--vicious-color-count) * var(--vicious-indent-width)
@@ -233,7 +235,6 @@
 	--checklist-textColor1: var(--000) !important;
 	--mono-rgb-100: var(--000-RGB);
 	--callout-default: var(--000-RGB);
-	--link-color: var(--000);
 	--callout-error: var(--C001-RGB);
 	--callout-warning: var(--C001-RGB);
 	--color-red-rgb: var(--C001-RGB);
@@ -316,7 +317,7 @@
 	--table-border-color: var(--200);
 	--color-base-25: var(--300);
 	--color-base-30: var(--300);
-	--interactive-hover: var(--300);
+	--interactive-hover: var(--200);
 	--tab-outline-color: var(--300);
 	--select-color: var(--200);
 	--collapse-icon-color: var(--400);
@@ -338,7 +339,6 @@
 	--checklist-textColor1: var(--800) !important;
 	--mono-rgb-100: var(--800-RGB);
 	--callout-default: var(--800-RGB);
-	--link-color: var(--800);
 	--callout-error: var(--C001-RGB);
 	--callout-warning: var(--C001-RGB);
 	--color-red-rgb: var(--C001-RGB);
@@ -673,6 +673,21 @@ select:focus,
 }
 .multi-select-pill {
 	padding: var(--pill-padding-y) 4px;
+}
+.hover-popover .inline-title {
+	display: block;
+}
+
+.inline-embed .inline-title {
+	display: block;
+}
+
+.metadata-menu.fileclass-view
+	.fv-fields
+	.fields-container
+	.type-container
+	.chip {
+	color: var(--text-on-accent);
 }
 
 .dataview.task-list-item:hover,
