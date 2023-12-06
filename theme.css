@@ -2326,9 +2326,16 @@ p > a.tag:nth-child(7n + 11),
 /*================================================*/
 .fileClass-add-button,
 .metadata-menu.fileclass-icon {
-	color: var(--text-on-accent);
+	color: currentColor;
 }
 
 .workspace-tab-header-inner > .metadata-menu.fileclass-icon {
 	color: var(--text-normal);
+}
+/*================================================*/
+/* Dataview
+/*================================================*/
+
+.container.svelte-pcimu8 {
+	--color-dot: var(--interactive-accent) !important;
 }

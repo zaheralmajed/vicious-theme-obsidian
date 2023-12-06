@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2023-12-06
+
+### Changed
+
+-   General Style Fixes
+
 ## [1.0.2] - 2023-12-03
 
 ### Changed
