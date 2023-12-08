@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2023-12-08
+
+### Changed
+
+-   Icon bar at the top of the tool on the right to slide left and right to prevent the icon from deforming.
+
 ## [1.0.3] - 2023-12-06
 
 ### Changed

@@ -657,7 +657,6 @@ select:focus,
 .mod-right-split .workspace-tab-header {
 	border: 1px solid var(--table-border-color);
 	border-radius: var(--radius-m);
-	overflow: inherit;
 }
 
 /*================================================*/
