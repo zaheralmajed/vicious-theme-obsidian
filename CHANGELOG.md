@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2023-12-16
+
+### Added
+
+-   bookmark section custom icons.
+-   bookmark section vibrant folder.
+
+### Changed
+
+-   bookmark section styling.
+
 ## [1.0.4] - 2023-12-08
 
 ### Changed
