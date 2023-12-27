@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2023-12-27
+
+### Fixed
+
+-   Vibrant List Indents.
+
 ## [1.0.5] - 2023-12-16
 
 ### Added

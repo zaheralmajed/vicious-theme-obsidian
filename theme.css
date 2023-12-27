@@ -93,12 +93,12 @@
 	--code-radius: var(--radius-m);
 	--font-use-default: var(--default-font);
 	--font-size-use-default: var(--editor-font-size);
-	--indent-use-default: 3.42ch;
+	--indent-use-default: 3.5ch;
 	--vicious-indent-font-family: var(--font-use-default);
 	--vicious-indent-font-size: var(--font-size-use-default);
-	--vicious-indent-width: var(--indent-use-default);
-	--vicious-left-offset: 0.3px;
-	--vicious-line-width: 2px;
+	--vicious-indent-width: 3.84ch;
+	--vicious-left-offset: 2ch;
+	--vicious-line-width: 3px;
 	--vicious-color-count: 11;
 	--vicious-indent-11: var(--C011);
 	--vicious-indent-10: var(--C010);
@@ -1426,7 +1426,7 @@ th,
 	display: block;
 	position: absolute;
 	width: 100%;
-	top: -1.6em;
+	top: -1em;
 	padding-bottom: 999em;
 	background-image: var(--vicious-indent-colorful-bg);
 	background-size: var(--vicious-indent-bg-size);
