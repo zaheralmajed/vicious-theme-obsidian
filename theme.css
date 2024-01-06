@@ -593,6 +593,10 @@ select:focus,
 	border-radius: var(--radius-xl);
 	border: none;
 }
+.is-mobile .workspace-leaf-content:is([data-type="file-explorer"])
+{
+	background-color: var(--800);
+}
 
 .workspace-split .workspace-leaf-content[data-type="bookmarks"],
 .workspace-split .workspace-leaf-content[data-type="file-explorer"] {
@@ -1566,6 +1570,19 @@ th,
 }
 .nav-folder.mod-root > .nav-folder-children > .nav-file {
 	border-radius: var(--radius-xl);
+}
+.is-mobile .nav-folder.mod-root > .nav-folder-children > .nav-file  {
+	border-radius: var(--radius-m);
+
+}
+.is-mobile .workspace-drawer-header-name-text {
+	font-size: 90%;
+}
+.is-mobile .workspace-drawer-ribbon{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: start;
 }
 
 .nav-file {

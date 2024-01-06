@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2024-01-06
+
+### Fixed
+
+-   Mobile styling issues.
+-   Minot Styling Issues.
+
 ## [1.0.6] - 2023-12-27
 
 ### Fixed
