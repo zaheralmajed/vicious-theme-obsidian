@@ -11,6 +11,42 @@
 /** ───████░░████────██░░░░░░██──██░░░░░░░░░░██──██░░░░░░██──██░░░░░░░░░░██──██░░░░░░░░░░██──██░░░░░░░░░░██─**/
 /** ─────██████──────██████████──██████████████──██████████──██████████████──██████████████──██████████████─**/
 /** ────────────────────────────────────────────────────────────────────────────────────────────────────────**/
+
+/* @settings
+
+name: Vicious
+id: vicious
+settings:
+    - 
+        id: generalSettings
+        title: General Settings
+        type: heading
+        level: 2
+
+    - 
+        title: Disable Scrollbar
+        id: scrollbar-hide
+        type: class-toggle
+		default: true
+		description: Turn on if you want to hide the scrollbar
+
+    - 
+        title: Disable Vibrant Indent
+        id: vibrant-indents
+        type: class-toggle
+		default: false
+		description: Turn on if you want to hide the vibrant indent
+
+
+    - 
+        title: Disable Vibrant Folders
+        id: vibrant-folders
+        type: class-toggle		
+		default: false
+		description: Turn on if you want to hide the vibrant folders
+
+		*/
+
 /*================================================*/
 /* Root Colors
 /*================================================*/
@@ -96,7 +132,7 @@
 	--indent-use-default: 3.5ch;
 	--vicious-indent-font-family: var(--font-use-default);
 	--vicious-indent-font-size: var(--font-size-use-default);
-	--vicious-indent-width: 3.84ch;
+	--vicious-indent-width: 4.2ch;
 	--vicious-left-offset: 2ch;
 	--vicious-line-width: 3px;
 	--vicious-color-count: 11;
@@ -667,9 +703,10 @@ select:focus,
 /*================================================*/
 /* General Styling
 /*================================================*/
-*::-webkit-scrollbar {
+.scrollbar-hide *::-webkit-scrollbar {
 	display: none;
-}
+  }
+  
 
 * {
 	-ms-overflow-style: none;
@@ -1410,18 +1447,18 @@ th,
 /* Vibrant List Indents
 /*================================================*/
 
-.mod-cm6.is-live-preview .HyperMD-list-line.cm-line:not(.HyperMD-list-line-1) {
+body:not(.vibrant-indents) .mod-cm6.is-live-preview .HyperMD-list-line.cm-line:not(.HyperMD-list-line-1) {
 	overflow: hidden;
 }
 
-.mod-cm6.is-live-preview .HyperMD-list-line.cm-line .cm-hmd-list-indent {
+body:not(.vibrant-indents) .mod-cm6.is-live-preview .HyperMD-list-line.cm-line .cm-hmd-list-indent {
 	position: relative;
 	font-family: var(--vicious-indent-font-family) !important;
 	font-size: var(--vicious-indent-font-size) !important;
 	vertical-align: top;
 }
 
-.mod-cm6.is-live-preview
+body:not(.vibrant-indents) .mod-cm6.is-live-preview
 	.HyperMD-list-line.cm-line
 	.cm-hmd-list-indent::before {
 	content: "";
@@ -1437,13 +1474,34 @@ th,
 	left: var(--vicious-left-offset);
 }
 
-.markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line {
+body:not(.vibrant-indents) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line {
 	padding-top: 0.15em;
 	padding-bottom: 0.15em;
 }
 /*================================================*/
 /* Vibrant Folders
 /*================================================*/
+
+body:not(.theme-light).vibrant-folders  .nav-folder-children > .nav-folder,
+.vibrant-folders  [data-type="bookmarks"] .tree-item{
+--colorful: var(--800-RGB);
+--text-color: var(--000-RGB)}
+
+
+body:not(.theme-light)  .nav-folder-children > .nav-folder,
+  [data-type="bookmarks"] .tree-item{
+--text-color: var(--800-RGB)}
+
+body:not(.theme-dark)  .nav-folder-children > .nav-folder,
+  [data-type="bookmarks"] .tree-item{
+--text-color: var(--000-RGB)}
+
+body:not(.theme-dark).vibrant-folders  .nav-folder-children > .nav-folder,
+.vibrant-folders  [data-type="bookmarks"] .tree-item{
+--colorful: var(--000-RGB);
+--text-color: var(--800-RGB)
+}
+
 
 .nav-folder-children > .nav-folder:nth-child(11n + 2),
 [data-type="bookmarks"] .tree-item:nth-child(11n + 2) {
@@ -1529,7 +1587,7 @@ th,
 	.workspace-leaf-content[data-type="file-explorer"]
 	.tree-item-self
 	.tree-item-icon {
-	color: rgba(var(--800-RGB));
+	color: rgba(var(--text-color));
 }
 .theme-light
 	.nav-folder.mod-root
@@ -1601,18 +1659,28 @@ align-items: start;
 	flex-direction: column;
 }
 
-.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder {
-	transition: background-color 0.4s;
-	background-color: rgba(var(--colorful), 1);
-	border: 1px solid rgba(var(--colorful), 0);
-	border-radius: var(--radius-s);
+
+
+
+ .theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder {
+    transition: background-color 0.4s;
+    background-color: rgba(var(--colorful), 1);
+    border: 1px solid rgba(var(--colorful), 0);
+    border-radius: var(--radius-s);
 }
+
+
+
 .theme-light .nav-folder.mod-root > .nav-folder-children > .nav-folder {
 	transition: background-color 0.4s;
 	background-color: rgba(var(--colorful), 1);
 	border: 0px solid rgba(var(--colorful), 1);
 	border-radius: var(--radius-s);
 }
+
+
+
+
 .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-children {
 	border-color: rgba(var(--800-RGB), 1);
 }

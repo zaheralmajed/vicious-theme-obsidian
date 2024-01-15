@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2024-01-15
+
+### Added
+
+-   Support for style setting plugin
+-   Now you can hide/show scrollbar
+-   Now you can disable/enable Vibrant indent
+-   Now you can disable/enable Vibrant folders
+
+### Fixed
+
+-   Windows Styling Issues.
+
 ## [1.0.7] - 2024-01-06
 
 ### Fixed
