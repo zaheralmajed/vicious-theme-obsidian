@@ -1636,7 +1636,7 @@ body:not(.theme-dark).vibrant-folders  .nav-folder-children > .nav-folder,
 .is-mobile .workspace-drawer-header-name-text {
 	font-size: 90%;
 }
-.is-mobile .workspace-drawer-ribbon{
+.is-tablet .workspace-drawer-ribbon{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
