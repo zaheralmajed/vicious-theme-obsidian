@@ -22,7 +22,6 @@ settings:
         title: General Settings
         type: heading
         level: 2
-
     - 
         title: Disable Scrollbar
         id: scrollbar-hide
@@ -44,6 +43,181 @@ settings:
         type: class-toggle		
 		default: false
 		description: Turn on if you want to hide the vibrant folders
+    - 
+        id: colors
+        title: Colors
+        type: heading
+        level: 2
+    - 
+
+		id: boldcolors
+		title: Bold Color
+		description: Select your preferred **BOLD** color
+		type: class-select
+		allowEmpty: false
+		default: bold-C002
+		options:
+		- 
+			label: Red
+			value: bold-C001
+		- 
+			label: Beach
+			value: bold-C002
+		- 
+			label: Gold
+			value: bold-C003
+		- 
+			label: Yellow
+			value: bold-C004
+		- 
+			label: Lime
+			value: bold-C005
+		- 
+			label: Green
+			value: bold-C006
+		- 
+			label: Turquoise
+			value: bold-C007
+		- 
+			label: Cyan
+			value: bold-C008
+		- 
+			label: Purple
+			value: bold-C009
+		- 
+			label: Violet
+			value: bold-C010
+		- 
+			label: Pink
+			value: bold-C011
+
+	-
+		id: italicscolors
+		title: Italics Color
+		description: Select your preferred _ITALIC_ color
+		type: class-select
+		allowEmpty: false
+		default: itl-C003
+		options:
+		- 
+			label: Red
+			value: itl-C001
+		- 
+			label: Beach
+			value: itl-C002
+		- 
+			label: Gold
+			value: itl-C003
+		- 
+			label: Yellow
+			value: itl-C004
+		- 
+			label: Lime
+			value: itl-C005
+		- 
+			label: Green
+			value: itl-C006
+		- 
+			label: Turquoise
+			value: itl-C007
+		- 
+			label: Cyan
+			value: itl-C008
+		- 
+			label: Purple
+			value: itl-C009
+		- 
+			label: Violet
+			value: itl-C010
+		- 
+			label: Pink
+			value: itl-C011
+
+	-
+		id: bold-italicscolors
+		title: Bold + Italics Color
+		description: Select your preferred **_BOLD+ITALIC_** color
+		type: class-select
+		allowEmpty: false
+		default: bld-itl-C001
+		options:
+		- 
+			label: Red
+			value: bld-itl-C001
+		- 
+			label: Beach
+			value: bld-itl-C002
+		- 
+			label: Gold
+			value: bld-itl-C003
+		- 
+			label: Yellow
+			value: bld-itl-C004
+		- 
+			label: Lime
+			value: bld-itl-C005
+		- 
+			label: Green
+			value: bld-itl-C006
+		- 
+			label: Turquoise
+			value: bld-itl-C007
+		- 
+			label: Cyan
+			value: bld-itl-C008
+		- 
+			label: Purple
+			value: bld-itl-C009
+		- 
+			label: Violet
+			value: bld-itl-C010
+		- 
+			label: Pink
+			value: bld-itl-C011
+	-
+
+		id: highlightcolors
+		title: Highlight Color
+		description: Select your preferred highlight color
+		type: class-select
+		allowEmpty: false
+		default: highlight-C003
+		options:
+		- 
+			label: Red
+			value: highlight-C001
+		- 
+			label: Beach
+			value: highlight-C002
+		- 
+			label: Gold
+			value: highlight-C003
+		- 
+			label: Yellow
+			value: highlight-C004
+		- 
+			label: Lime
+			value: highlight-C005
+		- 
+			label: Green
+			value: highlight-C006
+		- 
+			label: Turquoise
+			value: highlight-C007
+		- 
+			label: Cyan
+			value: highlight-C008
+		- 
+			label: Purple
+			value: highlight-C009
+		- 
+			label: Violet
+			value: highlight-C010
+		- 
+			label: Pink
+			value: highlight-C011
+
+
 
 		*/
 
@@ -422,8 +596,213 @@ settings:
 }
 
 /*================================================*/
+/* Bold
+/*================================================*/
+
+.bold-C001 .cm-strong,
+strong {
+	color: rgb(var(--C001-RGB)) !important;
+}
+.bold-C002 .cm-strong,
+strong {
+	color: rgb(var(--C002-RGB)) !important;
+}
+.bold-C003 .cm-strong,
+strong {
+	color: rgb(var(--C003-RGB)) !important;
+}
+.bold-C004 .cm-strong,
+strong {
+	color: rgb(var(--C004-RGB)) !important;
+}
+.bold-C005 .cm-strong,
+strong {
+	color: rgb(var(--C005-RGB)) !important;
+}
+.bold-C006 .cm-strong,
+strong {
+	color: rgb(var(--C006-RGB)) !important;
+}
+.bold-C007 .cm-strong,
+strong {
+	color: rgb(var(--C007-RGB)) !important;
+}
+.bold-C008 .cm-strong,
+strong {
+	color: rgb(var(--C008-RGB)) !important;
+}
+.bold-C009 .cm-strong,
+strong {
+	color: rgb(var(--C009-RGB)) !important;
+}
+.bold-C010 .cm-strong,
+strong {
+	color: rgb(var(--C010-RGB)) !important;
+}
+.bold-C011 .cm-strong,
+strong {
+	color: rgb(var(--C011-RGB)) !important;
+}
+
+/*================================================*/
+/* Italics
+/*================================================*/
+
+.itl-C001 .cm-em,
+em {
+	color: rgb(var(--C001-RGB)) !important;
+}
+.itl-C002 .cm-em,
+em {
+	color: rgb(var(--C002-RGB)) !important;
+}
+.itl-C003 .cm-em,
+em {
+	color: rgb(var(--C003-RGB)) !important;
+}
+.itl-C004 .cm-em,
+em {
+	color: rgb(var(--C004-RGB)) !important;
+}
+.itl-C005 .cm-em,
+em {
+	color: rgb(var(--C005-RGB)) !important;
+}
+.itl-C006 .cm-em,
+em {
+	color: rgb(var(--C006-RGB)) !important;
+}
+.itl-C007 .cm-em,
+em {
+	color: rgb(var(--C007-RGB)) !important;
+}
+.itl-C008 .cm-em,
+em {
+	color: rgb(var(--C008-RGB)) !important;
+}
+.itl-C009 .cm-em,
+em {
+	color: rgb(var(--C009-RGB)) !important;
+}
+.itl-C010 .cm-em,
+em {
+	color: rgb(var(--C010-RGB)) !important;
+}
+.itl-C011 .cm-em,
+em {
+	color: rgb(var(--C011-RGB)) !important;
+}
+
+/*================================================*/
+/* Bold+Italics
+/*================================================*/
+
+.bld-itl-C001 .cm-strong.cm-em {
+	color: rgb(var(--C001-RGB)) !important;
+}
+.bld-itl-C002 .cm-strong.cm-em {
+	color: rgb(var(--C002-RGB)) !important;
+}
+.bld-itl-C003 .cm-strong.cm-em {
+	color: rgb(var(--C003-RGB)) !important;
+}
+.bld-itl-C004 .cm-strong.cm-em {
+	color: rgb(var(--C004-RGB)) !important;
+}
+.bld-itl-C005 .cm-strong.cm-em {
+	color: rgb(var(--C005-RGB)) !important;
+}
+.bld-itl-C006 .cm-strong.cm-em {
+	color: rgb(var(--C006-RGB)) !important;
+}
+.bld-itl-C007 .cm-strong.cm-em {
+	color: rgb(var(--C007-RGB)) !important;
+}
+.bld-itl-C008 .cm-strong.cm-em {
+	color: rgb(var(--C008-RGB)) !important;
+}
+.bld-itl-C009 .cm-strong.cm-em {
+	color: rgb(var(--C009-RGB)) !important;
+}
+.bld-itl-C010 .cm-strong.cm-em {
+	color: rgb(var(--C010-RGB)) !important;
+}
+.bld-itl-C011 .cm-strong.cm-em {
+	color: rgb(var(--C011-RGB)) !important;
+}
+
+/*================================================*/
+/* Highlight
+/*================================================*/
+
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight,
+.markdown-preview-view mark {
+	padding: 2px 4px;
+	border-radius: 4px;
+	color: var(--800);
+}
+
+.highlight-C001 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C001 .cm-s-obsidian span.cm-highlight,
+.highlight-C001 .markdown-preview-view mark {
+	background: rgb(var(--C001-RGB)) !important;
+}
+.highlight-C002 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C002 .cm-s-obsidian span.cm-highlight,
+.highlight-C002 .markdown-preview-view mark {
+	background: rgb(var(--C002-RGB)) !important;
+}
+.highlight-C003 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C003 .cm-s-obsidian span.cm-highlight,
+.highlight-C003 .markdown-preview-view mark {
+	background: rgb(var(--C003-RGB)) !important;
+}
+.highlight-C004 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C004 .cm-s-obsidian span.cm-highlight,
+.highlight-C004 .markdown-preview-view mark {
+	background: rgb(var(--C004-RGB)) !important;
+}
+.highlight-C005 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C005 .cm-s-obsidian span.cm-highlight,
+.highlight-C005 .markdown-preview-view mark {
+	background: rgb(var(--C005-RGB)) !important;
+}
+.highlight-C006 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C006 .cm-s-obsidian span.cm-highlight,
+.highlight-C006 .markdown-preview-view mark {
+	background: rgb(var(--C006-RGB)) !important;
+}
+.highlight-C007 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C007 .cm-s-obsidian span.cm-highlight,
+.highlight-C007 .markdown-preview-view mark {
+	background: rgb(var(--C007-RGB)) !important;
+}
+.highlight-C008 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C008 .cm-s-obsidian span.cm-highlight,
+.highlight-C008 .markdown-preview-view mark {
+	background: rgb(var(--C008-RGB)) !important;
+}
+.highlight-C009 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C009 .cm-s-obsidian span.cm-highlight,
+.highlight-C009 .markdown-preview-view mark {
+	background: rgb(var(--C009-RGB)) !important;
+}
+.highlight-C010 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C010 .cm-s-obsidian span.cm-highlight,
+.highlight-C010 .markdown-preview-view mark {
+	background: rgb(var(--C010-RGB)) !important;
+}
+.highlight-C011 .cm-s-obsidian span.cm-formatting-highlight,
+.highlight-C011 .cm-s-obsidian span.cm-highlight,
+.highlight-C011 .markdown-preview-view mark {
+	background: rgb(var(--C011-RGB)) !important;
+}
+
+/*================================================*/
 /* Workspace
 /*================================================*/
+
 .nav-file-title,
 .nav-folder-title {
 	margin-bottom: -1px;
@@ -460,10 +839,10 @@ settings:
 	gap: 4px;
 }
 
-.view-header,
-.is-focused .workspace-leaf.mod-active .view-header {
+/* .view-header,
+  .is-focused .workspace-leaf.mod-active .view-header {
 	background: var(--card-color);
-}
+  } */
 
 .mod-fade:not(.mod-at-end):after {
 	background: transparent;
@@ -629,8 +1008,7 @@ select:focus,
 	border-radius: var(--radius-xl);
 	border: none;
 }
-.is-mobile .workspace-leaf-content:is([data-type="file-explorer"])
-{
+.is-mobile .workspace-leaf-content:is([data-type="file-explorer"]) {
 	background-color: var(--800);
 }
 
@@ -705,8 +1083,7 @@ select:focus,
 /*================================================*/
 .scrollbar-hide *::-webkit-scrollbar {
 	display: none;
-  }
-  
+}
 
 * {
 	-ms-overflow-style: none;
@@ -1447,18 +1824,24 @@ th,
 /* Vibrant List Indents
 /*================================================*/
 
-body:not(.vibrant-indents) .mod-cm6.is-live-preview .HyperMD-list-line.cm-line:not(.HyperMD-list-line-1) {
+body:not(.vibrant-indents)
+	.mod-cm6.is-live-preview
+	.HyperMD-list-line.cm-line:not(.HyperMD-list-line-1) {
 	overflow: hidden;
 }
 
-body:not(.vibrant-indents) .mod-cm6.is-live-preview .HyperMD-list-line.cm-line .cm-hmd-list-indent {
+body:not(.vibrant-indents)
+	.mod-cm6.is-live-preview
+	.HyperMD-list-line.cm-line
+	.cm-hmd-list-indent {
 	position: relative;
 	font-family: var(--vicious-indent-font-family) !important;
 	font-size: var(--vicious-indent-font-size) !important;
 	vertical-align: top;
 }
 
-body:not(.vibrant-indents) .mod-cm6.is-live-preview
+body:not(.vibrant-indents)
+	.mod-cm6.is-live-preview
 	.HyperMD-list-line.cm-line
 	.cm-hmd-list-indent::before {
 	content: "";
@@ -1474,7 +1857,9 @@ body:not(.vibrant-indents) .mod-cm6.is-live-preview
 	left: var(--vicious-left-offset);
 }
 
-body:not(.vibrant-indents) .markdown-source-view.mod-cm6.is-live-preview .HyperMD-list-line {
+body:not(.vibrant-indents)
+	.markdown-source-view.mod-cm6.is-live-preview
+	.HyperMD-list-line {
 	padding-top: 0.15em;
 	padding-bottom: 0.15em;
 }
@@ -1482,26 +1867,27 @@ body:not(.vibrant-indents) .markdown-source-view.mod-cm6.is-live-preview .HyperM
 /* Vibrant Folders
 /*================================================*/
 
-body:not(.theme-light).vibrant-folders  .nav-folder-children > .nav-folder,
-.vibrant-folders  [data-type="bookmarks"] .tree-item{
---colorful: var(--800-RGB);
---text-color: var(--000-RGB)}
-
-
-body:not(.theme-light)  .nav-folder-children > .nav-folder,
-  [data-type="bookmarks"] .tree-item{
---text-color: var(--800-RGB)}
-
-body:not(.theme-dark)  .nav-folder-children > .nav-folder,
-  [data-type="bookmarks"] .tree-item{
---text-color: var(--000-RGB)}
-
-body:not(.theme-dark).vibrant-folders  .nav-folder-children > .nav-folder,
-.vibrant-folders  [data-type="bookmarks"] .tree-item{
---colorful: var(--000-RGB);
---text-color: var(--800-RGB)
+body:not(.theme-light).vibrant-folders .nav-folder-children > .nav-folder,
+.vibrant-folders [data-type="bookmarks"] .tree-item {
+	--colorful: var(--800-RGB);
+	--text-color: var(--000-RGB);
 }
 
+body:not(.theme-light) .nav-folder-children > .nav-folder,
+[data-type="bookmarks"] .tree-item {
+	--text-color: var(--800-RGB);
+}
+
+body:not(.theme-dark) .nav-folder-children > .nav-folder,
+[data-type="bookmarks"] .tree-item {
+	--text-color: var(--000-RGB);
+}
+
+body:not(.theme-dark).vibrant-folders .nav-folder-children > .nav-folder,
+.vibrant-folders [data-type="bookmarks"] .tree-item {
+	--colorful: var(--000-RGB);
+	--text-color: var(--800-RGB);
+}
 
 .nav-folder-children > .nav-folder:nth-child(11n + 2),
 [data-type="bookmarks"] .tree-item:nth-child(11n + 2) {
@@ -1629,18 +2015,17 @@ body:not(.theme-dark).vibrant-folders  .nav-folder-children > .nav-folder,
 .nav-folder.mod-root > .nav-folder-children > .nav-file {
 	border-radius: var(--radius-xl);
 }
-.is-mobile .nav-folder.mod-root > .nav-folder-children > .nav-file  {
+.is-mobile .nav-folder.mod-root > .nav-folder-children > .nav-file {
 	border-radius: var(--radius-m);
-
 }
 .is-mobile .workspace-drawer-header-name-text {
 	font-size: 90%;
 }
-.is-tablet .workspace-drawer-ribbon{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: start;
+.is-tablet .workspace-drawer-ribbon {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
 }
 
 .nav-file {
@@ -1659,17 +2044,12 @@ align-items: start;
 	flex-direction: column;
 }
 
-
-
-
- .theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder {
-    transition: background-color 0.4s;
-    background-color: rgba(var(--colorful), 1);
-    border: 1px solid rgba(var(--colorful), 0);
-    border-radius: var(--radius-s);
+.theme-dark .nav-folder.mod-root > .nav-folder-children > .nav-folder {
+	transition: background-color 0.4s;
+	background-color: rgba(var(--colorful), 1);
+	border: 1px solid rgba(var(--colorful), 0);
+	border-radius: var(--radius-s);
 }
-
-
 
 .theme-light .nav-folder.mod-root > .nav-folder-children > .nav-folder {
 	transition: background-color 0.4s;
@@ -1677,9 +2057,6 @@ align-items: start;
 	border: 0px solid rgba(var(--colorful), 1);
 	border-radius: var(--radius-s);
 }
-
-
-
 
 .nav-folder.mod-root > .nav-folder-children > .nav-folder .nav-folder-children {
 	border-color: rgba(var(--800-RGB), 1);

@@ -2,12 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.10] - 2024-04-22
+
+### Added
+
+-   BOLD, ITALIC and BOLD+ITALIC colors.
+-   Style settings for customize colors.
+
+### Fixed
+
+-   Style issue for beautitab plugin.
+-   Minor Styling Issues.
+
 
 ## [1.0.9] - 2024-01-20
 
 ### Fixed
--   Mobile Styling Issues.
 
+-   Mobile Styling Issues.
 
 ## [1.0.8] - 2024-01-15
 
