@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.11] - 2024-05-03
+
+### Added
+
+-   Four Diffrent callout styles.
+-   Four Diffrent callout styles options in style settings.
+
 ## [1.0.10] - 2024-04-22
 
 ### Added
@@ -13,7 +20,6 @@ All notable changes to this project will be documented in this file.
 
 -   Style issue for beautitab plugin.
 -   Minor Styling Issues.
-
 
 ## [1.0.9] - 2024-01-20
 

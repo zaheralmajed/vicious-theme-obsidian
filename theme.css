@@ -44,6 +44,26 @@ settings:
 		default: false
 		description: Turn on if you want to hide the vibrant folders
     - 
+		id: callout Style
+		title: Callout Style
+		description: Select your preferred callout style
+		type: class-select
+		allowEmpty: false
+		default: callout-style-01
+		options:
+		- 
+			label: Default
+			value: callout-style-01
+		-
+			label: Static
+			value: callout-style-04 
+		-
+			label: Vibrant
+			value: callout-style-02
+		- 
+			label: One Color
+			value: callout-style-03
+    - 
         id: colors
         title: Colors
         type: heading
@@ -489,6 +509,7 @@ settings:
 	--list-marker-color: var(--text-muted);
 	--checkbox-border-color: var(--text-muted);
 	--icon-color: var(--text-faint);
+	--callout-RGB: var(--600-RGB);
 }
 /*================================================*/
 /* Light Theme
@@ -593,6 +614,7 @@ settings:
 	--list-marker-color: var(--text-muted);
 	--checkbox-border-color: var(--text-muted);
 	--icon-color: var(--text-faint);
+	--callout-RGB: var(--200-RGB);
 }
 
 /*================================================*/
@@ -840,9 +862,9 @@ em {
 }
 
 /* .view-header,
-  .is-focused .workspace-leaf.mod-active .view-header {
-	background: var(--card-color);
-  } */
+	.is-focused .workspace-leaf.mod-active .view-header {
+	  background: var(--card-color);
+	} */
 
 .mod-fade:not(.mod-at-end):after {
 	background: transparent;
@@ -1342,8 +1364,23 @@ th,
 .callout {
 	background-color: rgba(var(--callout-color), 1);
 }
+
+.callout-style-03 .callout {
+	background: var(--metadata-label-text-color);
+	color: var(--background-primary);
+}
+
+.callout-style-03 .callout-content {
+	background: rgb(var(--metadata-label-text-color));
+	color: var(--background-primary);
+}
+
 .callout-icon .svg-icon,
 .callout-title-inner {
+	color: var(--800);
+}
+.callout-style-03 .callout-icon .svg-icon,
+.callout-style-03 .callout-title-inner {
 	color: var(--background-primary);
 }
 .callout-content > p:last-child,
@@ -1357,68 +1394,144 @@ th,
 .callout-content > ol:first-child {
 	margin-top: 0px;
 }
+.callout-style-02 .callout-content {
+	background: transparent;
+	color: var(--800);
+}
+.callout-style-04 .callout-content {
+	background: rgba(var(--callout-RGB, 0.4));
+	color: var(--text-color);
+}
 
-.callout-content {
+.callout-style-01 .callout-content,
+.callout-style-04 .callout-content {
 	border-top: 1px solid rgba(var(--callout-color), 0.64);
 	padding: 8px 16px !important;
 }
+.callout-style-03 .callout-content {
+	border-top: 1px solid var(--background-primary);
+	padding: 8px 16px !important;
+}
+.callout-style-02 .callout-content {
+	border-top: 1px solid var(--background-primary);
+	padding: 8px 16px !important;
+}
 
-.callout {
+.callout-style-01 .callout {
 	border: 1px solid rgb(var(--callout-color), 0.64);
 }
-.callout[data-callout="help"],
-.callout[data-callout="faq"],
-.callout[data-callout="question"] {
+.callout-style-01 .callout[data-callout="help"],
+.callout-style-01 .callout[data-callout="faq"],
+.callout-style-01 .callout[data-callout="question"] {
 	border: 1px solid rgb(var(--callout-question), 0.64);
 }
 
-.callout[data-callout="tip"],
-.callout[data-callout="hint"],
-.callout[data-callout="bug"] {
+.callout-style-01 .callout[data-callout="tip"],
+.callout-style-01 .callout[data-callout="hint"],
+.callout-style-01 .callout[data-callout="bug"] {
 	border: 1px solid rgb(var(--callout-bug), 0.64);
 }
 
-.callout[data-callout="error"],
-.callout[data-callout="danger"],
-.callout[data-callout="attention"],
-.callout[data-callout="caution"],
-.callout[data-callout="warning"] {
+.callout-style-01 .callout[data-callout="error"],
+.callout-style-01 .callout[data-callout="danger"],
+.callout-style-01 .callout[data-callout="attention"],
+.callout-style-01 .callout[data-callout="caution"],
+.callout-style-01 .callout[data-callout="warning"] {
 	border: 1px solid rgb(var(--callout-error), 0.64);
 }
 
-.callout[data-callout="example"] {
+.callout-style-01 .callout[data-callout="example"] {
 	border: 1px solid rgb(var(--callout-example), 0.64);
 }
 
-.callout[data-callout="failure"],
-.callout[data-callout="missing"],
-.callout[data-callout="fail"] {
+.callout-style-01 .callout[data-callout="failure"],
+.callout-style-01 .callout[data-callout="missing"],
+.callout-style-01 .callout[data-callout="fail"] {
 	border: 1px solid rgb(var(--callout-fail), 0.64);
 }
 
-.callout[data-callout="important"] {
+.callout-style-01 .callout[data-callout="important"] {
 	border: 1px solid rgb(var(--callout-important), 0.64);
 }
 
-.callout[data-callout="info"] {
+.callout-style-01 .callout[data-callout="info"] {
 	border: 1px solid rgb(var(--callout-info), 0.64);
 }
 
-.callout[data-callout="success"],
-.callout[data-callout="check"],
-.callout[data-callout="done"] {
+.callout-style-01 .callout[data-callout="success"],
+.callout-style-01 .callout[data-callout="check"],
+.callout-style-01 .callout[data-callout="done"] {
 	border: 1px solid rgb(var(--callout-success), 0.64);
 }
 
-.callout[data-callout="abstract"],
-.callout[data-callout="tldr"],
-.callout[data-callout="summary"] {
+.callout-style-01 .callout[data-callout="abstract"],
+.callout-style-01 .callout[data-callout="tldr"],
+.callout-style-01 .callout[data-callout="summary"] {
 	border: 1px solid rgb(var(--callout-summary), 0.64);
 }
 
-.callout[data-callout="todo"],
-.callout[data-callout="cite"],
-.callout[data-callout="quote"] {
+.callout-style-01 .callout[data-callout="todo"],
+.callout-style-01 .callout[data-callout="cite"],
+.callout-style-01 .callout[data-callout="quote"] {
+	border: 1px solid rgb(var(--callout-todo), 0.64);
+}
+
+.callout-style-04 .callout {
+	border: 1px solid rgb(var(--callout-color), 0.64);
+}
+.callout-style-04 .callout[data-callout="help"],
+.callout-style-04 .callout[data-callout="faq"],
+.callout-style-04 .callout[data-callout="question"] {
+	border: 1px solid rgb(var(--callout-question), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="tip"],
+.callout-style-04 .callout[data-callout="hint"],
+.callout-style-04 .callout[data-callout="bug"] {
+	border: 1px solid rgb(var(--callout-bug), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="error"],
+.callout-style-04 .callout[data-callout="danger"],
+.callout-style-04 .callout[data-callout="attention"],
+.callout-style-04 .callout[data-callout="caution"],
+.callout-style-04 .callout[data-callout="warning"] {
+	border: 1px solid rgb(var(--callout-error), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="example"] {
+	border: 1px solid rgb(var(--callout-example), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="failure"],
+.callout-style-04 .callout[data-callout="missing"],
+.callout-style-04 .callout[data-callout="fail"] {
+	border: 1px solid rgb(var(--callout-fail), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="important"] {
+	border: 1px solid rgb(var(--callout-important), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="info"] {
+	border: 1px solid rgb(var(--callout-info), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="success"],
+.callout-style-04 .callout[data-callout="check"],
+.callout-style-04 .callout[data-callout="done"] {
+	border: 1px solid rgb(var(--callout-success), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="abstract"],
+.callout-style-04 .callout[data-callout="tldr"],
+.callout-style-04 .callout[data-callout="summary"] {
+	border: 1px solid rgb(var(--callout-summary), 0.64);
+}
+
+.callout-style-04 .callout[data-callout="todo"],
+.callout-style-04 .callout[data-callout="cite"],
+.callout-style-04 .callout[data-callout="quote"] {
 	border: 1px solid rgb(var(--callout-todo), 0.64);
 }
 /*================================================*/
