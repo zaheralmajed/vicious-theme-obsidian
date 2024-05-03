@@ -6,8 +6,8 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
--   Four Diffrent callout styles.
--   Four Diffrent callout styles options in style settings.
+-   Four different callout styles.
+-   Four different callout styles options in style settings.
 
 ## [1.0.10] - 2024-04-22
 
