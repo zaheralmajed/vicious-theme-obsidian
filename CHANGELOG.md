@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2024-06-08
+
+### Fixed
+
+-   Vibrant folders for 1.6.1.
+-   BOLD, ITALIC and BOLD+ITALIC colors in reading mode.
+-   Minor Styling Issues.
+
 ## [1.0.11] - 2024-05-03
 
 ### Added
