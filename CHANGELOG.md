@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2024-08-15
+
+### Fixed
+
+-   Scrollbar Issue
+-   Minor Styling Issues.
+
 ## [1.1.0] - 2024-06-08
 
 ### Fixed
