@@ -434,7 +434,7 @@ settings:
 	--card-color: var(--700);
 	--side-dock-color: var(--700);
 	--pill-background: var(--700);
-	--text-selection: var(--700);
+	--text-selection: var(--500);
 	--code-background: var(--700);
 	--hr-color: var(--700);
 	--background-modifier-cover: rgba(var(--800-RGB), 1);
@@ -539,7 +539,7 @@ settings:
 	--card-color: var(--100);
 	--side-dock-color: var(--100);
 	--pill-background: var(--100);
-	--text-selection: var(--100);
+	--text-selection: var(--200);
 	--code-background: var(--100);
 	--hr-color: var(--100);
 	--background-modifier-cover: rgba(var(--000-RGB), 1);

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2024-08-29
+
+### Fixed
+
+-   Minor Styling Issues.
+
 ## [1.1.1] - 2024-08-15
 
 ### Fixed
