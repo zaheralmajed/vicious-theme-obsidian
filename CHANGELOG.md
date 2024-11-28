@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3] - 2024-08-29
+
+### Added
+
+-   Implemented Alternative Checkboxes Style Settings Toggle
+
 ## [1.1.2] - 2024-08-29
 
 ### Fixed

@@ -1,8 +1,7 @@
 {
 	"name": "Vicious",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"minAppVersion": "1.6.0",
 	"author": "Zaher Al Majed",
-	"authorUrl": "https://zaher.design",
-	"fundingUrl": "https://ko-fi.com/zaheralmajed"
+	"authorUrl": "https://zaher.design"
 }
